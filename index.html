@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SADCat</title>
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.3.4/css/dataTables.dataTables.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/2.3.4/js/dataTables.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/3.2.5/js/dataTables.buttons.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/3.2.5/js/buttons.dataTables.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/3.2.5/js/buttons.html5.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+
+    <h1>Supra-Arcade Downflow Catalog</h1>
+
+    <hr>
+    <table id="sadcat-table" class="compact stripe">
+        <thead>
+            <tr>
+                <th colspan="6" data-dt-order="disable">GOES SXR flare</th>
+                <th colspan="3" data-dt-order="disable">Source region</th>
+                <th colspan="4" data-dt-order="disable">CME</th>
+            </tr>
+            <tr>
+                <th>Start time [UTC]</th>
+                <th>Peak time [UTC]</th>
+                <th>End time [UTC]</th>
+                <th><abbr title="Duration">Dur.</abbr> [min]</th>
+                <th><abbr title="Impulsivity">Imp.</abbr></th>
+                <th>Class</th>
+                <th><abbr title="Number">No.</abbr></th>
+                <th><abbr title="Latitude">Lat.</abbr> [&deg;]</th>
+                <th><abbr title="Longitude">Lon.</abbr> [&deg;]</th>
+                <th>Speed <nobr>[km/s]</nobr></th>
+                <th><abbr title="Acceleration">Accel.</abbr> <nobr>[km/s<sup>2</sup>]</nobr></th>
+                <th>Mass [g]</th>
+                <th data-dt-order="disable"></th>
+            </tr>
+        </thead>
+    </table>
+</html>

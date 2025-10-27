@@ -1,0 +1,17 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-weight: normal;
+    text-align: center;
+}
+
+th, dt-column-header {
+    font-weight: normal;
+    font-size: 14;
+}
+
+td {
+    font-family: monospace;
+}
