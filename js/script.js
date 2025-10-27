@@ -1,6 +1,6 @@
 $(document).ready(function(){
     new DataTable('#sadcat-table', {
-        ajax: '/data/sadcat.json',
+        ajax: '/sadcat-web/data/sadcat.json',
         layout: {
             topStart: {buttons: ['copy', 'csv'],},
         },
