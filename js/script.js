@@ -1,7 +1,7 @@
 $(document).ready(function(){
     new DataTable('#sadcat-table', {
-        // ajax: '/sadcat-web/data/sadcat.json',
-        ajax: '../data/sadcat.json',
+        ajax: '/sadcat-web/data/sadcat.json',
+        // ajax: '/data/sadcat.json',
         layout: {
             topStart: {buttons: ['copy', 'csv'],},
         },
