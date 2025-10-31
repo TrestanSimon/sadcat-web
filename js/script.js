@@ -1,6 +1,7 @@
 $(document).ready(function(){
     new DataTable('#sadcat-table', {
-        ajax: '/sadcat-web/data/sadcat.json',
+        // ajax: '/sadcat-web/data/sadcat.json',
+        ajax: '../data/sadcat.json',
         layout: {
             topStart: {buttons: ['copy', 'csv'],},
         },
@@ -14,7 +15,7 @@ $(document).ready(function(){
             },
             {
                 targets: [1, 2, 3],
-                render: DataTable.render.datetime('YYYY-MM-DD hh:mm'),
+                render: DataTable.render.datetime('YYYY-MM-DD HH:mm'),
             },
             {
                 targets: 6,
