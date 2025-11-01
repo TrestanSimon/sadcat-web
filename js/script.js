@@ -5,7 +5,7 @@ $(document).ready(function(){
         layout: {
             topStart: {buttons: ['copy', 'csv'],},
         },
-        info: false,
+        info: true,
         ordering: true,
         paging: false,
         columnDefs: [
