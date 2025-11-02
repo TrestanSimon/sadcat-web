@@ -3,7 +3,14 @@ $(document).ready(function(){
         ajax: '/sadcat-web/data/sadcat.json',
         // ajax: '/data/sadcat.json',
         layout: {
-            topStart: {buttons: ['copy', 'csv'],},
+            topStart: {buttons: [
+                {
+                    extend: 'collection',
+                    text: 'Export',
+                    buttons: ['copy', 'csv']
+                },
+                'colvis'
+            ],},
         },
         info: true,
         ordering: true,
@@ -43,13 +50,21 @@ $(document).ready(function(){
                     if (type === 'sort' || type === 'type') {
                         if (data == 'N/A') {
                             return 0
-                        } else {
-                            return data
-                        }
-                    } else {
-                        return data
-                    }
+                        } else { return data }
+                    } else { return data }
                 }
+            },
+            {
+                targets: 18,
+                render: function (data, type) {
+                    if (type === 'display') {
+                        return '<a href=' + data + '><i class="fa fa-external-link"></i></a>'
+                    } else { return data }
+                }
+            },
+            {
+                targets: [14, 15, 16, 17],
+                visible: false,
             }
         ],
     });

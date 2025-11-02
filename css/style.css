@@ -8,10 +8,19 @@ h1 {
 }
 
 th, dt-column-header {
-    font-weight: normal;
+    font-weight: normal !important;
     font-size: 14;
 }
 
 td {
     font-family: monospace;
+}
+
+button, dt-button {
+    font-family: serif;
+    padding: 0.2em 0.4em !important;
+}
+
+div.dt-button-background {
+    background: transparent;
 }
