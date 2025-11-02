@@ -1,10 +1,13 @@
 body {
-    font-family: serif;
+    font-family: sans-serif;
 }
 
-h1 {
-    font-weight: normal;
+h1, h2 {
     text-align: center;
+}
+
+p, ul {
+    margin: 0em 2em 0em 2em;
 }
 
 th, dt-column-header {
@@ -17,7 +20,7 @@ td {
 }
 
 button, dt-button {
-    font-family: serif;
+    font-family: sans-serif;
     padding: 0.2em 0.4em !important;
 }
 
