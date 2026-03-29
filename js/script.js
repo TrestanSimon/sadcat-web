@@ -58,7 +58,11 @@ $(document).ready(function(){
                 targets: 14,
                 render: function (data, type) {
                     if (type === 'display') {
-                        return ''
+                        if (data == null) {
+                            return ''
+			} else {
+                            return '<a href=/sadcat-web/data/previews/' + data + '><i class="fa fa-external-link"></i></a>'
+                        }
                     } else { return data }
                 }
             },
