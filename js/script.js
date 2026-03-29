@@ -55,7 +55,15 @@ $(document).ready(function(){
                 }
             },
             {
-                targets: 18,
+                targets: 14,
+                render: function (data, type) {
+                    if (type === 'display') {
+                        return ''
+                    } else { return data }
+                }
+            },
+            {
+                targets: 19,
                 render: function (data, type) {
                     if (type === 'display') {
                         return '<a href=' + data + '><i class="fa fa-external-link"></i></a>'
@@ -63,7 +71,7 @@ $(document).ready(function(){
                 }
             },
             {
-                targets: [14, 15, 16, 17],
+                targets: [15, 16, 17, 18, 19],
                 visible: false,
             }
         ],
