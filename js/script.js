@@ -61,7 +61,7 @@ $(document).ready(function(){
                         if (data == null) {
                             return ''
 			} else {
-                            return '<a href=/sadcat-web/data/previews/' + data + '><i class="fa fa-external-link"></i></a>'
+                            return '<a href=/sadcat-web/data/previews/' + data + ' target="_blank"><i class="fa fa-external-link"></i></a>'
                         }
                     } else { return data }
                 }
@@ -70,7 +70,7 @@ $(document).ready(function(){
                 targets: 19,
                 render: function (data, type) {
                     if (type === 'display') {
-                        return '<a href=' + data + '><i class="fa fa-external-link"></i></a>'
+                        return '<a href=' + data + ' target="_blank"><i class="fa fa-external-link"></i></a>'
                     } else { return data }
                 }
             },
