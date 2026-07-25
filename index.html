@@ -17,10 +17,14 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
     </head>
-    <h1>Supra-Arcade Downflow Catalog</h1>
-    <p>
-        The following is a catalog of supra-arcade downflow (SAD) events imaged by the Atmospheric Imaging Assembly (AIA) aboard the Solar Dynamics Observatory (SDO) during solar cycle 24. See the <a href="#acknowledgements">Acknowledgements</a>.
-    </p>
+    <div class="text-container">
+        <h1>Supra-Arcade Downflow Catalog</h1>
+        <p>
+            The following is a catalog of solar flares with supra-arcade downflows (SADs) imaged during solar cycle&nbsp;24 by the Atmospheric Imaging Assembly (AIA) aboard the Solar Dynamics Observatory (SDO).
+            A full description of the catalog can be found in the <a href="https://doi.org/10.1007/s11207-026-02708-z">accompanying publication</a>.
+            The <a href="#symbol-definitions">symbol definitions</a>, <a href="#acknowledgements">acknowledgements</a>, and information about <a href="#citing-sadcat">citing the SADCat</a> are provided below the catalog.
+        </p>
+    </div>
     <hr>
     <table id="sadcat-table" class="compact stripe row-border">
         <thead>
@@ -55,10 +59,54 @@
             </tr>
         </thead>
     </table>
-    <h2 id="acknowledgements">Acknowledgements</h2>
-    <ul>
-        <li>Flare data came from the Hinode Flare Catalogue at <a href="https://hinode.isee.nagoya-u.ac.jp/flare_catalogue/">https://hinode.isee.nagoya-u.ac.jp/flare_catalogue/</a>, which is maintained by ISAS/JAXA and Institute for Space-Earth Environmental Research (ISEE), Nagoya University.</li>
-        <li>Coronal mass ejection (CME) data came from the SOHO LASCO CME Catalog at <a href="https://cdaw.gsfc.nasa.gov/CME_list/index.html">https://cdaw.gsfc.nasa.gov/CME_list/index.html</a>, which is generated and maintained at the CDAW Data Center by NASA and The Catholic University of America in cooperation with the Naval Research Laboratory. SOHO is a project of international cooperation between ESA and NASA.</li>
-        <li>The SDO data used is courtesy of NASA/SDO and the AIA, EVE, and HMI science teams.</li>
-    </ul>
+    <div class="text-container">
+        <h2 id="symbol-definitions">Symbol Definitions</h2>
+        <p>
+            * Uncertainty in the CME mass data reported by the SOHO LASCO CME Catalog (<a href="https://cdaw.gsfc.nasa.gov/CME_list/catalog_description.htm">more information</a>)
+        </p>
+        <p>
+            † CME correlated with another flare in the SADCat
+        </p>
+        <h2 id="acknowledgements">Acknowledgements</h2>
+        <p>
+            Flare data came from the Hinode Flare Catalogue at <a href="https://hinode.isee.nagoya-u.ac.jp/flare_catalogue/">https://hinode.isee.nagoya-u.ac.jp/flare_catalogue/</a>, which is maintained by ISAS/JAXA and Institute for Space-Earth Environmental Research (ISEE), Nagoya University.
+        </p>
+        <p>
+            CME data came from the SOHO LASCO CME Catalog at <a href="https://cdaw.gsfc.nasa.gov/CME_list/index.html">https://cdaw.gsfc.nasa.gov/CME_list/index.html</a>, which is generated and maintained at the CDAW Data Center by NASA and The Catholic University of America in cooperation with the Naval Research Laboratory. SOHO is a project of international cooperation between ESA and NASA.
+        </p>
+        <p>
+            The SDO data used is courtesy of NASA/SDO and the AIA, EVE, and HMI science teams.
+        </p>
+        <h2 id="citing-sadcat">Citing SADCat</h2>
+        <p>
+            If you use SADCat in your research, please cite the accompanying publication:
+        </p>
+        <blockquote>
+            Simon, T. F., &amp; French, R. J. 2026,
+            "SADCat: A Catalog of Supra-Arcade Downflow Events in Solar Flares,"
+            <em>Solar Physics</em>, <strong>301</strong>, 113,
+            <a href="https://doi.org/10.1007/s11207-026-02708-z">https://doi.org/10.1007/s11207-026-02708-z</a>
+        </blockquote>
+        <p>
+            BibTeX:
+        </p>
+        <pre><code>
+@ARTICLE{simon_2026,
+       author = {{Simon}, Trestan F. and {French}, Ryan J.},
+        title = "{SADCat: A Catalog of Supra-Arcade Downflow Events in Solar Flares}",
+      journal = {\solphys},
+         year = 2026,
+        month = jul,
+       volume = {301},
+       number = {7},
+          eid = {113},
+          doi = {10.48550/arXiv.2607.03697},
+}
+        </code></pre>
+        <p>
+            If your work uses data originating from specific missions or
+            catalogs reproduced in the SADCat, please also cite the original data
+            providers.
+        </p>
+    </div>
 </html>
